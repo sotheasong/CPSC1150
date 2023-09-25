@@ -1,0 +1,23 @@
+public class Quiz3{
+    public static void main(String[] args){
+        int n=50;
+        double x = 10;
+        double y=0, z=0;
+
+        // your code
+        float i=1;
+        while (i <= n){
+            y = y + (i/(i+1));
+            i += 1;
+        }
+
+        int j=1;
+        while (j <= n){
+            z = z + ((x+j)/Math.pow(x, j));
+            j += 1;
+        }
+
+        System.out.println("y = "+ y);
+        System.out.println("z = "+ z);
+    }
+}
